@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@mipmap/ic_sound_bg"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:text="取消"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:text="提交"
+            android:layout_marginTop="25dp"
+
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_revision"
+            android:layout_toLeftOf="@+id/iv_sound"
+            android:src="@mipmap/ic_sound_again"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_marginRight="60dp"
+            android:layout_height="40dp">
+        </ImageView>
+
+
+        <cn.lanru.soundrecording.HDCircleProgressView
+            android:id="@+id/iv_sound"
+            android:background="@mipmap/ic_sound_ready"
+            android:layout_centerInParent="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+        </cn.lanru.soundrecording.HDCircleProgressView>
+        <TextView
+            android:id="@+id/tv_time"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_sound"
+            android:layout_marginTop="15dp"
+            android:text="点击录制"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
